@@ -1,0 +1,245 @@
+/*selector universal - Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+header{
+    padding: 50px;
+    height: 150px;
+    background-color: #ffff;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+}
+a{ 
+    text-decoration: none;
+
+}
+ul li{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+ul li a{
+    color:rgb(50, 50, 50);
+    padding: 10px;
+    
+}
+h1{
+    color: rgb(50, 50, 50);
+    padding: 50px; 
+    margin: 30px 70px 30px 10px;
+    text-align: left;
+}
+p{
+    font-family: 'roboto', sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    word-spacing: 2px; 
+    color: rgb(50, 50, 50);
+}
+
+img{
+    height: 20%;
+    border-radius: 3px;
+}
+
+footer{
+    height: 250px;
+}
+
+.logo{
+    height: 100%;   
+}
+
+main p{
+    font-family: 'roboto', sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    text-align: center;
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: white;
+    border: 0px ;
+    margin-top: 80px;   
+}
+
+.pie{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.logoflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flexFooter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 50px;
+}
+.redesFlex{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 60%;
+    margin-top: 50px;
+}
+div.redesFlex img{
+    height: 60px;
+    width: 60px;
+}
+
+footer h3{
+    color: #E79C21;
+}
+
+
+/*CSS CONTACTO*/
+
+.flexForm{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center; 
+    background-image: url(../img/paisajes/tractor.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.flexinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form.form div{
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px #505050;
+    border: 1px solid #505050;
+}
+
+/*CSS PRODUCTOS*/
+
+.flexContainerProductos{
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+/*CSS SERVICIOS*/
+
+div.flexServicios img{
+    margin-top: 60px;
+}
+div.flexServicios p{
+    margin-bottom: 60px;
+}
+
+.flexServicios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: rgb(67, 117, 105);
+}
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/paisajes/acequia.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1500px;
+}
+
+/*PRODUCTOS*/
+
+.flexProductos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: rgb(61, 67, 65);
+    
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 4px solid #ffff;
+}
+div.productos h2{
+    margin-top: 3px;
+}
+
+div.productos img{
+    margin-top: 10px;
+    padding: 20px;
+}
+
+div.productos p{
+    margin-bottom: 30px;
+}
+
+/*NOVEDADES*/
+
+.grid{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1000px;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: center;
+}
+section.grid div{
+    width: 200px;
+    height: 1000px;
+    margin: 5px;
+    margin-top: 20px;
+}
+section.grid div img{
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #505050;
+}
+section.grid div h3{
+    padding: 10px;
+}
+section.grid div p{
+    margin-top: 20px;
+}
+section.grid{
+    border: 1px solid #505050;
+}
+
+
+
+
+
+
+
+
+
+
