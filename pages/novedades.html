@@ -6,40 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../img/iconos/favicon.png">
+    <meta name="description" content="Novedades en venta de agroinsumos y asesoramiento en cultivos, plantaciones, plagas y enfermedades">
+    <meta name="keywords" content="novedades, agro, campo, agronomía, cultivo, plantación, valle de uco, bioinsumo, fetilizante, ajo, zanahoria, frutales, cebolla, riego, maquinaria">
+    <title>Novedades</title>
 </head>
 <body>
     <header>
         
-        <nav class="menu">
-            <a href="../index.html"><img class="logo" src="../img/marcas/huarpes.png" alt="logo huarpes"></a>
-            <ul>
-                <li>
-                    <a href="../index.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./novedades.html">Novedades</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/marcas/huarpes.png" alt="logo huarpes"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HUARPES, agroinsumos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Menú
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="novedades.html">Novedades</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="productos.html">Productos</a>
+                                    </li>
+                                    <li>
+                                    <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="servicios.html">Servicios</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </nav>
+
     </header>
     <section class="grid">
-            <div>
+            <div class="uno">
                 <img src="../img/novedades/certificacioniram_post_web.png">
                 <h3>Certificación</h3>
                 <p>IRAM es una marca de certificación, una herramienta a favor del cliente, pensando en sus necesidades y expectativas. Nos permite demostrar el compromiso de nuestra empresa con la calidad, ayudando a trabajar en la mejora continua y en la transparencia de los procesos.</p>
                 <p>LA MARCA DE CERTIFICACIÓN ES SINÓNIMO DE CONFIANZA, CALIDAD Y SEGURIDAD.</p>
             </div>
-            <div>
+            <div class="dos">
                 <img src="../img/novedades/yseguimos_post_trabajador_rural.png">
                 <h3>Comienzan las cosechas</h3>
                 <p>Tu satisfacción es lo que nos moviliza.
@@ -47,12 +78,12 @@
                     Del campo, de ahí somos.
                     </p>
             </div>
-            <div>
+            <div class="tres">
                 <img src="../img/novedades/nogales_post_trabajador_rural.png">
                 <h3>Plagas</h3>
                 <p>¿Estás curando tus nogales? Sabemos de PLAGAS y ENFERMEDADES. Contamos con las herramientas para que juntos logremos la mejor solución.</p>
             </div>
-            <div>
+            <div class="cuatro">
                 <img src="../img/novedades/trabajador.png">
                 <h3>¿Ya cosechaste tus zanahorias?</h3>
                 <p>Nuestro bienestar empieza con una tierra protegida.</p>

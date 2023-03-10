@@ -1,15 +1,28 @@
+
+
+/*tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*MOBILE FIRST 300PX*/
+
 /*selector universal - Reset*/
 *{
     margin: 0;
     padding: 0;
 }
-/*tipografia*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 header{
-    padding: 50px;
-    height: 150px;
+    padding: 3.125rem;
+    height: 9.375rem;
     background-color: #ffff;
+    font-size: large;
 }
 
 .menu{
@@ -23,24 +36,44 @@ ul{
 }
 a{ 
     text-decoration: none;
-
+}
+ul a:hover{
+    color: white;
+    background-color: rgb(67, 117, 105);
+    border-radius: 1.25rem;
 }
 ul li{
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 0.9375rem;
     margin-right: 5px;
 }
+
 ul li a{
     color:rgb(50, 50, 50);
-    padding: 10px;
-    
+    padding: 10px;   
 }
+
+button.btn-outline-success:hover {
+    background-color: rgb(67, 117, 105);
+}
+
 h1{
-    color: rgb(50, 50, 50);
-    padding: 50px; 
-    margin: 30px 70px 30px 10px;
-    text-align: left;
+    color: white;
+    text-align: center;
 }
+
+h2{
+    color: rgb(50, 50, 50);
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+h3{
+    color: #E79C21;
+    text-align: center;
+}
+
 p{
     font-family: 'roboto', sans-serif;
     font-weight: lighter;
@@ -53,13 +86,14 @@ p{
     color: rgb(50, 50, 50);
 }
 
+
 img{
     height: 20%;
     border-radius: 3px;
 }
 
 footer{
-    height: 250px;
+    height: 15.625rem;
 }
 
 .logo{
@@ -75,10 +109,13 @@ main p{
     line-height: 30px;
     letter-spacing: 1px;
     word-spacing: 2px;
-    color: white;
+    color: #ffff;
     border: 0px ;
     margin-top: 80px;   
 }
+div.col p{
+    color: rgb(67, 117, 105);
+} 
 
 .pie{
     display: flex;
@@ -97,41 +134,61 @@ main p{
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 .redesFlex{
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     height: 60%;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 div.redesFlex img{
-    height: 60px;
-    width: 60px;
+    height: 3.75rem;
+    width: 3.75rem;
 }
 
 footer h3{
     color: #E79C21;
 }
+.containerPrincipal{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: stretch;
+}
+.containerPrincipal header{
+    grid-area: header;
+}
+.containerPrincipal main{
+    grid-area: main;
+}
+.containerPrincipal footer{
+    grid-area: footer;
+}
 
+/*CSS NOSOTROS*/
+
+main.flexContainer{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 1000px;
+}
 
 /*CSS CONTACTO*/
 
-.flexForm{
+.Form{
     display: flex;
-    justify-content: space-evenly;
-    align-items:center; 
+    justify-content: space-around;
     background-image: url(../img/paisajes/tractor.JPG);
     background-size: 100%;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat; 
 }
-.flexinput{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 form.form div{
     margin: 20px;
     border-radius: 10px;
@@ -149,10 +206,10 @@ form.form div{
 /*CSS SERVICIOS*/
 
 div.flexServicios img{
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 div.flexServicios p{
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .flexServicios{
@@ -230,8 +287,11 @@ section.grid div h3{
 section.grid div p{
     margin-top: 20px;
 }
-section.grid{
-    border: 1px solid #505050;
+
+/*RESPONSIVE @MEDIA*/
+
+@media (min-width: 500px){
+
 }
 
 

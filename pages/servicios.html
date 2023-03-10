@@ -6,38 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
-    <title>Huarpes</title>
+    <link rel="shortcut icon" href="../img/iconos/favicon.png">
+    <meta name="description" content="Servicios de agronomía y asesoramiento en cultivos, plantaciones, plagas y enfermedades">
+    <meta name="keywords" content="servicios, agro, campo, agronomía, cultivo, plantación, valle de uco, bioinsumo, fetilizante, ajo, zanahoria, frutales, cebolla, riego, maquinaria">
+    <title>Servicios</title>
 </head>
 <body>
     <header>
         
-        <nav class="menu">
-            <a href="../index.html"><img class="logo" src="../img/marcas/huarpes.png" alt="logo huarpes"></a>
-            <ul>
-                <li>
-                    <a href="../index.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./novedades.html">Novedades</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/marcas/huarpes.png" alt="logo huarpes"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HUARPES, agroinsumos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Menú
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="novedades.html">Novedades</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="productos.html">Productos</a>
+                                    </li>
+                                    <li>
+                                    <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="servicios.html">Servicios</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </nav>
+
     </header>
     <main>
         <div class="flexServicios">
             <img src="../img/logos/logo_huarpes_blanco_redondo.png" alt="logo"> 
             <p>Acompañamos en el día a día al productor para poder brindarle las herramientas necesarias con el mejor costo beneficio. Nuestro mayor anhelo es que obtenga su mejor cosecha, por eso proponemos un manejo sustentable del cultivo, permitiendo la proyección a largo plazo.</p>
         </div>
-        <div class="flexContainer">
+        <div class="container text-center">
+            <div class="row row-cols-4">
+              <div class="col">
+                <h2>Asesoramiento</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sint nobis. Consequuntur laudantium ullam eos. Iure mollitia possimus, illum beatae officia, dolore labore inventore sequi corrupti blanditiis ipsa iusto quasi!</p>
+              </div>
+              <div class="col">
+                <h2>Acompañamiento</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quo adipisci dicta, illo, perferendis recusandae aut cupiditate, explicabo facilis facere ipsum quae sit ab hic neque doloremque odit ratione omnis.</p>
+              </div>
+              <div class="col">
+                <h2>Agroinsumos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores dicta vitae dolore veniam dolores, sint consectetur eum ex? Dolorem porro ad facilis itaque quam, reiciendis a autem. Eveniet, impedit!</p>
+              </div>
+              <div class="col">
+                <h2>Ferreteria Agraria</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam officia consequuntur harum nisi tenetur adipisci sit assumenda atque dolorem eveniet amet, soluta minima ducimus deleniti maxime voluptates! Minus, ea eius.</p>
+              </div>
+            </div>
+          </div>
+        <!--<div class="flexContainer">
             <h2>Asesoramiento</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sint nobis. Consequuntur laudantium ullam eos. Iure mollitia possimus, illum beatae officia, dolore labore inventore sequi corrupti blanditiis ipsa iusto quasi!</p>
             <p></p>
@@ -50,7 +101,7 @@
             <h2>Ferreteria Agraria</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam officia consequuntur harum nisi tenetur adipisci sit assumenda atque dolorem eveniet amet, soluta minima ducimus deleniti maxime voluptates! Minus, ea eius.</p>
             <p></p>
-        </div>
+        </div>-->
 
     
     </main>
